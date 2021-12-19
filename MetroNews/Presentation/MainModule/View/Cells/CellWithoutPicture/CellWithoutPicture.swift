@@ -28,6 +28,16 @@ final class CellWithoutPicture: UITableViewCell {
         super.init(coder: aDecoder)
     }
     
+    // MARK: - Private Methods
+    
+    private func setupTweetDateWith(epochTime: Int) {
+        let date = DateFormatterFactory.convertFromEpochDate(
+            time: epochTime,
+            with: DateFormat.MMM_dd_hh_mm_a
+        )
+        timeLabel.text = date
+    }
+    
 }
 
 // MARK: - NewsCellProtocol
@@ -43,13 +53,4 @@ extension CellWithoutPicture: NewsCellProtocol {
         likeLabel.text = "\(item.favoriteCount)"
     }
     
-    func setupTweetDateWith(epochTime: Int) {
-        let date = DateFormatterFactory.convertFromEpochDate(
-            time: epochTime,
-            with: DateFormat.MMM_dd_hh_mm_a
-        )
-        timeLabel.text = date
-    }
-    
-    func setupMainImageWith(url: String) {}
 }

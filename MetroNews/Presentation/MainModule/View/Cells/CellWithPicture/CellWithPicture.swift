@@ -34,6 +34,16 @@ final class CellWithPicture: UITableViewCell {
         super.init(coder: aDecoder)
     }
     
+    // MARK: - Private Methods
+    
+    private func setupTweetDateWith(epochTime: Int) {
+        let date = DateFormatterFactory.convertFromEpochDate(
+            time: epochTime,
+            with: DateFormat.MMM_dd_hh_mm_a
+        )
+        timeLabel.text = date
+    }
+    
 }
 
 // MARK: - NewsCellProtocol
@@ -49,27 +59,7 @@ extension CellWithPicture: NewsCellProtocol {
         likeLabel.text = "\(item.favoriteCount)"
         
         guard let url = item.mediaEntities?.first else { return }
-        setupMainImageWith(url: url)
-    }
-    
-    func setupMainImageWith(url: String) {
-        guard let imgURL = URL(string: url) else { return }
-        // 1. Setup image using SDWebImage
-        mainImage.sd_setImage(with: imgURL, completed: nil)
-        
-        //        2. Setup image using ImageCachingService
-        //        imageCachingService.getImageWith(url: imgURL) { [weak self] image in
-        //            guard let self = self else { return }
-        //            self.mainImage.image = image
-        //        }
-    }
-    
-    func setupTweetDateWith(epochTime: Int) {
-        let date = DateFormatterFactory.convertFromEpochDate(
-            time: epochTime,
-            with: DateFormat.MMM_dd_hh_mm_a
-        )
-        timeLabel.text = date
+        mainImage.setupImageWith(url: url)
     }
     
 }

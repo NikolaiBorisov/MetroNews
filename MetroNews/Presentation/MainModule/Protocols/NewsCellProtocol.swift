@@ -9,6 +9,4 @@ import UIKit
 
 protocol NewsCellProtocol {
     func configureCellWith(item: Tweet)
-    func setupMainImageWith(url: String)
-    func setupTweetDateWith(epochTime: Int)
 }
