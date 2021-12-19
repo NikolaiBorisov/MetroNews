@@ -1,0 +1,25 @@
+/* 
+  Localizable.strings
+  MetroNews
+
+  Created by NIKOLAI BORISOV on 18.12.2021.
+  
+*/
+
+// MARK: - Errors
+
+"JSONParsingError" = "JSON parsing error";
+"NoInternetConnection" = "No internet connection";
+"ServerIsNotResponding" = "Server is not responding";
+"URLIsNotValid" = "URL is not valid";
+"NoData" = "No data";
+"SomethingWrongWithUrlSessionData" = "Something wrong with URL session data";
+
+// MARK: - ErrorView
+
+"error" = "Error";
+"tryAgain" = "Try again";
+
+// MARK: - Loading
+
+"loading" = "Loading...";

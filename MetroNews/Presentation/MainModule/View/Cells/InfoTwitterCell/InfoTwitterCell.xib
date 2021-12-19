@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="SFProDisplay-Bold.ttf">
+            <string>SFProDisplay-Bold</string>
+        </array>
+        <array key="SFProDisplay-Regular.ttf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="213" id="KGk-i7-Jjw" customClass="InfoTwitterCell" customModule="MetroNews" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="213"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="478" height="213"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PiV-Jv-TFP" userLabel="backgrounView">
+                        <rect key="frame" x="20" y="16" width="438" height="161"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="W8N-nN-67x" userLabel="topStackView">
+                                <rect key="frame" x="16" y="12" width="406" height="36"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="top" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="ad9-gJ-RSL" userLabel="topLabelsStackView">
+                                        <rect key="frame" x="0.0" y="0.0" width="370" height="36"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="f1h-xB-4qd" userLabel="lableAndBadgeStackView">
+                                                <rect key="frame" x="0.0" y="0.0" width="201.5" height="21.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Московское метро" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EY2-CA-9P7" userLabel="moscowMetroLabel">
+                                                        <rect key="frame" x="0.0" y="0.0" width="181.5" height="21.5"/>
+                                                        <fontDescription key="fontDescription" name="SFProDisplay-Bold" family="SF Pro Display" pointSize="20"/>
+                                                        <color key="textColor" name="dodgerBlue"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="twitterBadge" translatesAutoresizingMaskIntoConstraints="NO" id="pWb-9G-gQ1">
+                                                        <rect key="frame" x="186.5" y="2.5" width="15" height="16"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="16" id="6f2-eB-6aG"/>
+                                                            <constraint firstAttribute="width" constant="15" id="J7M-OT-10K"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="@MetroOperativno" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2j9-6v-6dc" userLabel="metroOperativnoLabel">
+                                                <rect key="frame" x="0.0" y="24.5" width="88" height="11.5"/>
+                                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="11"/>
+                                                <color key="textColor" name="osloGraySlateColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="metroLogo" translatesAutoresizingMaskIntoConstraints="NO" id="3lT-17-LsA">
+                                        <rect key="frame" x="370" y="0.0" width="36" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="DRX-9E-Qkz"/>
+                                            <constraint firstAttribute="height" constant="36" id="Ybr-4a-9xN"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Официальный твиттер-аккаунт Московского метрополитена по оперативному информированию о работе метро." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xvY-J1-57E">
+                                <rect key="frame" x="16" y="57" width="406" height="79"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="11"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="whiteAndBlack"/>
+                        <constraints>
+                            <constraint firstItem="xvY-J1-57E" firstAttribute="top" secondItem="W8N-nN-67x" secondAttribute="bottom" constant="9" id="2g2-v6-jA4"/>
+                            <constraint firstItem="W8N-nN-67x" firstAttribute="leading" secondItem="PiV-Jv-TFP" secondAttribute="leading" constant="16" id="P9d-RA-SLF"/>
+                            <constraint firstItem="W8N-nN-67x" firstAttribute="centerX" secondItem="PiV-Jv-TFP" secondAttribute="centerX" id="V11-GY-i7M"/>
+                            <constraint firstItem="W8N-nN-67x" firstAttribute="top" secondItem="PiV-Jv-TFP" secondAttribute="top" constant="12" id="iSk-p4-rNO"/>
+                            <constraint firstAttribute="trailing" secondItem="W8N-nN-67x" secondAttribute="trailing" constant="16" id="jgM-fI-Snr"/>
+                            <constraint firstAttribute="bottom" secondItem="xvY-J1-57E" secondAttribute="bottom" constant="25" id="lPg-Vr-Y9N"/>
+                            <constraint firstItem="xvY-J1-57E" firstAttribute="leading" secondItem="PiV-Jv-TFP" secondAttribute="leading" constant="16" id="rEv-1l-ixA"/>
+                            <constraint firstAttribute="trailing" secondItem="xvY-J1-57E" secondAttribute="trailing" constant="16" id="uLj-Y0-mrJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" name="viewBGColor"/>
+                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="PiV-Jv-TFP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="YAy-gr-95E"/>
+                    <constraint firstAttribute="trailing" secondItem="PiV-Jv-TFP" secondAttribute="trailing" constant="20" id="pZD-Dk-8EL"/>
+                    <constraint firstAttribute="bottom" secondItem="PiV-Jv-TFP" secondAttribute="bottom" constant="36" id="pfH-Lm-ULh"/>
+                    <constraint firstItem="PiV-Jv-TFP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="wER-qE-PQu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" name="viewBGColor"/>
+            <connections>
+                <outlet property="cellBackgroundView" destination="PiV-Jv-TFP" id="kfs-1C-Qpf"/>
+                <outlet property="infoLabel" destination="xvY-J1-57E" id="tiA-BC-6iJ"/>
+                <outlet property="metroOperativnoLabel" destination="2j9-6v-6dc" id="bSJ-rq-O3P"/>
+                <outlet property="moscowMetroLabel" destination="EY2-CA-9P7" id="5cT-MP-hBV"/>
+            </connections>
+            <point key="canvasLocation" x="169.56521739130437" y="289.62053571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="metroLogo" width="40" height="40"/>
+        <image name="twitterBadge" width="15" height="16"/>
+        <namedColor name="dodgerBlue">
+            <color red="0.11372549019607843" green="0.63137254901960782" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="osloGraySlateColor">
+            <color red="0.59607843137254901" green="0.59999999999999998" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="viewBGColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="whiteAndBlack">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
